@@ -9,7 +9,7 @@ st.title("🎙️ Multilingual Speech-to-Text with Translation & Correction")
 
 uploaded_file = st.file_uploader("📤 Upload a `.wav` file", type=["wav"])
 
-model_size = st.selectbox("Choose Whisper model", ["tiny", "base"], index=1)
+model_size = st.selectbox("Choose Whisper model", ["tiny", "base", "medium"], index=1)
 run_button = st.button("🔍 Transcribe and Process")
 
 if uploaded_file and run_button:
