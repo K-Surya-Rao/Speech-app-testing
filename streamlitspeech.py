@@ -33,6 +33,7 @@ if uploaded_file and run_button:
     translated_text = translated_result["text"]
 
     tool = language_tool_python.LanguageTool('en-US')
+
     st.subheader("📝 Results")
 
     # Show each segment
