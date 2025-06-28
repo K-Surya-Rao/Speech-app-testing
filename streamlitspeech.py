@@ -32,7 +32,8 @@ if uploaded_file and run_button:
     translated_segments = translated_result.get("segments", [])
     translated_text = translated_result["text"]
 
-    tool = language_tool_python.LanguageTool('en-US')
+    tool = language_tool_python.LanguageToolPublicAPI('en-US')
+
 
     st.subheader("📝 Results")
 
