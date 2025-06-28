@@ -3,3 +3,4 @@ openai-whisper
 language-tool-python
 indic-transliteration
 torch
+ffmpeg-python
