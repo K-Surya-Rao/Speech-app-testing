@@ -42,7 +42,10 @@ if uploaded_file and run_button:
         start = orig['start']
         end = orig['end']
         translated = trans['text'].strip()
-        corrected = language_tool_python.utils.correct(translated, tool.check(translated))
+        # At the end, after collecting all segments
+        full_corrected = language_tool_python.utils.correct(translated_text, tool.check(translated_text))
+        st.text_area("✅ Full Corrected Text", full_corrected, height=300)
+
 
         st.markdown(f"### Segment {i+1} [`{start:.2f}s - {end:.2f}s`]")        
         st.markdown(f"🌐 **Translated**: `{translated}`")
